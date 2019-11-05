@@ -72,7 +72,7 @@ var dog = {
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-//Code Here
+var devMountainClassPet = dog.name;
 
 //////////////////PROBLEM 10////////////////////
 
@@ -83,7 +83,15 @@ var dog = {
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
-// Code here
+function nameCheck(name){
+  if (name === 'Steven'){
+    return `What is up ${name}?`;
+  } else if (name === 'Bryan'){
+    return `Hey ${name}!`
+  } else {
+    return `Cool name, ${name}`
+  }
+}
 
 //////////////////PROBLEM 11////////////////////
 
@@ -91,12 +99,14 @@ var dog = {
 // that will be numbers.
 // The add function should return the two parameters added together
 
-//Code Here
+function add(num1, num2){
+  return num1 + num2;
+}
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-//Code Here
+var mathSum = add(3, 4);
 
 //////////////////PROBLEM 12////////////////////
 
